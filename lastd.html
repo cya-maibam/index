@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>last project</title>
+    <style>
+        body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+    }
+         div{
+        border:5px solid blue;
+        padding:50px;
+        margin-top:50px;
+        box-shadow: 9px 20px 20px rgb(28, 12, 152);
+
+        
+         }
+           input{
+        background: transparent;
+        height: 50px;
+        border-radius: 5px;
+        color: white;
+           }
+         button{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        padding: 5px;
+        background-color: pink;
+    }
+        input:invalid:not(:placeholder-shown){
+            border: 10px solid red;
+        
+    }
+    input:valid:not(:placeholder-shown){
+            border: 10px solid green;
+        
+    }
+    input:invalid~ button[type="submit"]{
+        opacity:0.6;
+        pointer-events:none;
+    }
+    </style>
+</head>
+<body>
+    <div>
+        <form action ="">
+            <button type="submit">Sign in</button> <br><br>
+        <label>USERNAME</label><br>
+    <input type="email" id="email" placeholder="Email" required> <br>
+
+     <label>Password</label><br>
+    <input type="password" id="Password" placeholder="password"  minlength="8"  required><br>
+        </form>
+    </div>
+</body>
+</html>
